@@ -7,79 +7,117 @@
 </head>
 <body>
 
-  <header class="hero">
-    <nav>
-      <h1>Flores Eternas</h1>
-      <a href="#catalogo">Catálogo</a>
-      <a href="#pedido">Pedir</a>
-    </nav>
+<header class="hero">
+  <nav>
+    <h1>Flores Eternas</h1>
+    <a href="#catalogo">Catálogo</a>
+    <a href="#galeria">Galería</a>
+    <a href="#pedido">Pedir</a>
+  </nav>
 
-    <div class="hero-content">
-      <h2>El regalo que nunca se marchita 🌹</h2>
-      <p>Flores eternas premium para aniversarios,cumpleaños y momentos inolvidables.</p>
-      <a class="btn" href="#catalogo">Ver catálogo</a>
+  <div class="hero-content">
+    <h2>El regalo que nunca se marchita 🌹</h2>
+    <p>Flores eternas premium para momentos inolvidables.</p>
+    <a class="btn" href="#catalogo">Ver catálogo</a>
+    <p style="margin-top:20px;font-weight:bold;">🎁 Envío gratis en pedidos seleccionados</p>
+  </div>
+</header>
+
+<section id="catalogo" class="catalogo">
+  <h2>Catálogo</h2>
+
+  <div class="productos">
+
+    <div class="producto">
+      <img src="images/rosa1.jpeg" class="foto">
+      <h3>Rosa eterna individual</h3>
+      <p>Detalle elegante para cualquier ocasión.</p>
+      <strong>$399 MXN</strong>
+      <button onclick="pedirProducto('Rosa eterna individual - $399 MXN')">Pedir por WhatsApp</button>
     </div>
-  </header>
 
-  <section id="catalogo" class="catalogo">
-    <h2>Catálogo</h2>
-
-    <div class="productos">
-
-      <div class="producto">
-        <img src="images/rosa1.jpeg" class="foto">
-        <h3>Rosa eterna individual</h3>
-        <p>Detalle elegante para cualquier ocasión.</p>
-        <strong>$399 MXN</strong>
-        <button onclick="pedirProducto('Rosa eterna individual')">
-          Pedir por WhatsApp
-        </button>
-      </div>
-
-      <div class="producto">
-        <img src="images/rosa2.jpeg" class="foto">
-        <h3>Caja de 3 rosas</h3>
-        <p>Ideal para aniversarios y cumpleaños.</p>
-        <strong>$799 MXN</strong>
-        <button onclick="pedirProducto('Caja de 3 rosas')">
-          Pedir por WhatsApp
-        </button>
-      </div>
-
-      <div class="producto">
-        <img src="images/rosa3.jpeg" class="foto">
-        <h3>Caja premium corazón</h3>
-        <p>Un regalo romántico y llamativo.</p>
-        <strong>$1,499 MXN</strong>
-        <button onclick="pedirProducto('Caja premium corazón')">
-          Pedir por WhatsApp
-        </button>
-      </div>
-
+    <div class="producto">
+      <img src="images/rosa2.jpeg" class="foto">
+      <h3>Caja de 3 rosas</h3>
+      <p>Ideal para aniversarios y cumpleaños.</p>
+      <strong>$799 MXN</strong>
+      <button onclick="pedirProducto('Caja de 3 rosas - $799 MXN')">Pedir por WhatsApp</button>
     </div>
-  </section>
 
-  <section class="promo">
-    <h2>Promoción especial ✨</h2>
-    <p>Entrega el mismo día en pedidos confirmados antes de las 3:00 PM.</p>
-  </section>
+    <div class="producto">
+      <img src="images/rosa3.jpeg" class="foto">
+      <h3>Caja premium corazón</h3>
+      <p>Un regalo romántico y llamativo.</p>
+      <strong>$1,499 MXN</strong>
+      <button onclick="pedirProducto('Caja premium corazón - $1,499 MXN')">Pedir por WhatsApp</button>
+    </div>
 
-  <section id="pedido" class="pedido">
-    <h2>Haz tu pedido</h2>
+  </div>
+</section>
 
-    <input type="text" id="nombre" placeholder="Tu nombre">
-    <input type="text" id="producto" placeholder="Producto que quieres">
-    <input type="text" id="mensaje" placeholder="Mensaje para la tarjeta">
+<section class="beneficios">
+  <h2>¿Por qué elegir nuestras flores eternas?</h2>
+  <p>🌹 Duran años sin marchitarse</p>
+  <p>🎁 Regalo elegante y exclusivo</p>
+  <p>🚚 Entrega rápida</p>
+  <p>❤️ Perfectas para aniversarios y ocasiones especiales</p>
+</section>
 
-    <button onclick="enviarPedido()">Enviar pedido por WhatsApp</button>
-  </section>
+<section id="galeria" class="galeria">
+  <h2>Nuestros Arreglos 🌹</h2>
 
-  <a class="whatsapp" onclick="abrirWhatsApp()">💬</a>
+  <div class="galeria-grid">
+
+    <div class="item-galeria"><img src="images/rosa1.jpeg"><h3>Arreglo Clásico</h3><strong>$399 MXN</strong><button onclick="pedirProducto('Arreglo Clásico - $399 MXN')">Pedir</button></div>
+    <div class="item-galeria"><img src="images/rosa2.jpeg"><h3>Ramo Romántico</h3><strong>$499 MXN</strong><button onclick="pedirProducto('Ramo Romántico - $499 MXN')">Pedir</button></div>
+    <div class="item-galeria"><img src="images/rosa3.jpeg"><h3>Detalle Premium</h3><strong>$599 MXN</strong><button onclick="pedirProducto('Detalle Premium - $599 MXN')">Pedir</button></div>
+    <div class="item-galeria"><img src="images/rosa4.jpeg"><h3>Caja Elegante</h3><strong>$699 MXN</strong><button onclick="pedirProducto('Caja Elegante - $699 MXN')">Pedir</button></div>
+
+    <div class="item-galeria"><img src="images/rosa5.jpeg"><h3>Rosa con Decoración</h3><strong>$449 MXN</strong><button onclick="pedirProducto('Rosa con Decoración - $449 MXN')">Pedir</button></div>
+    <div class="item-galeria"><img src="images/rosa6.jpeg"><h3>Arreglo Especial</h3><strong>$549 MXN</strong><button onclick="pedirProducto('Arreglo Especial - $549 MXN')">Pedir</button></div>
+    <div class="item-galeria"><img src="images/rosa7.jpeg"><h3>Detalle Amor</h3><strong>$649 MXN</strong><button onclick="pedirProducto('Detalle Amor - $649 MXN')">Pedir</button></div>
+    <div class="item-galeria"><img src="images/rosa8.jpeg"><h3>Ramo Sorpresa</h3><strong>$749 MXN</strong><button onclick="pedirProducto('Ramo Sorpresa - $749 MXN')">Pedir</button></div>
+
+    <div class="item-galeria"><img src="images/rosa9.jpeg"><h3>Arreglo Dulce</h3><strong>$399 MXN</strong><button onclick="pedirProducto('Arreglo Dulce - $399 MXN')">Pedir</button></div>
+    <div class="item-galeria"><img src="images/rosa10.jpeg"><h3>Rosa Deluxe</h3><strong>$899 MXN</strong><button onclick="pedirProducto('Rosa Deluxe - $899 MXN')">Pedir</button></div>
+    <div class="item-galeria"><img src="images/rosa11.jpeg"><h3>Ramo Premium</h3><strong>$999 MXN</strong><button onclick="pedirProducto('Ramo Premium - $999 MXN')">Pedir</button></div>
+    <div class="item-galeria"><img src="images/rosa12.jpeg"><h3>Arreglo Grande</h3><strong>$1,199 MXN</strong><button onclick="pedirProducto('Arreglo Grande - $1,199 MXN')">Pedir</button></div>
+
+    <div class="item-galeria"><img src="images/rosa13.jpeg"><h3>Detalle Personalizado</h3><strong>$599 MXN</strong><button onclick="pedirProducto('Detalle Personalizado - $599 MXN')">Pedir</button></div>
+    <div class="item-galeria"><img src="images/rosa14.jpeg"><h3>Ramo Azul</h3><strong>$799 MXN</strong><button onclick="pedirProducto('Ramo Azul - $799 MXN')">Pedir</button></div>
+    <div class="item-galeria"><img src="images/rosa15.jpeg"><h3>Ramo Rosa</h3><strong>$699 MXN</strong><button onclick="pedirProducto('Ramo Rosa - $699 MXN')">Pedir</button></div>
+    <div class="item-galeria"><img src="images/rosa16.jpeg"><h3>Girasol Eterno</h3><strong>$499 MXN</strong><button onclick="pedirProducto('Girasol Eterno - $499 MXN')">Pedir</button></div>
+
+    <div class="item-galeria"><img src="images/rosa17.jpeg"><h3>Ramo Amarillo</h3><strong>$549 MXN</strong><button onclick="pedirProducto('Ramo Amarillo - $549 MXN')">Pedir</button></div>
+    <div class="item-galeria"><img src="images/rosa18.jpeg"><h3>Detalle con Girasol</h3><strong>$649 MXN</strong><button onclick="pedirProducto('Detalle con Girasol - $649 MXN')">Pedir</button></div>
+    <div class="item-galeria"><img src="images/rosa19.jpeg"><h3>Arreglo Rojo</h3><strong>$899 MXN</strong><button onclick="pedirProducto('Arreglo Rojo - $899 MXN')">Pedir</button></div>
+    <div class="item-galeria"><img src="images/rosa20.jpeg"><h3>Caja Roja</h3><strong>$1,099 MXN</strong><button onclick="pedirProducto('Caja Roja - $1,099 MXN')">Pedir</button></div>
+
+    <div class="item-galeria"><img src="images/rosa21.jpeg"><h3>Detalle Verde</h3><strong>$449 MXN</strong><button onclick="pedirProducto('Detalle Verde - $449 MXN')">Pedir</button></div>
+    <div class="item-galeria"><img src="images/rosa22.jpeg"><h3>Ramo Amarillo Premium</h3><strong>$999 MXN</strong><button onclick="pedirProducto('Ramo Amarillo Premium - $999 MXN')">Pedir</button></div>
+
+  </div>
+</section>
+
+<section class="promo">
+  <h2>Promoción especial ✨</h2>
+  <p>Entrega el mismo día en pedidos confirmados antes de las 3:00 PM.</p>
+</section>
+
+<section id="pedido" class="pedido">
+  <h2>Haz tu pedido</h2>
+
+  <input type="text" id="nombre" placeholder="Tu nombre">
+  <input type="text" id="producto" placeholder="Producto que quieres">
+  <input type="text" id="mensaje" placeholder="Mensaje para la tarjeta">
+
+  <button onclick="enviarPedido()">Enviar pedido por WhatsApp</button>
+</section>
+
 <section class="testimonios">
   <h2>Lo que dicen nuestros clientes</h2>
 
   <div class="productos">
-
     <div class="producto">
       ⭐⭐⭐⭐⭐
       <p>"Llegó el mismo día y quedó encantada."</p>
@@ -97,20 +135,22 @@
       <p>"La mejor opción para aniversarios."</p>
       <strong>- Miguel</strong>
     </div>
-
   </div>
 </section>
+
 <section class="contacto">
-    <h2>Contáctanos</h2>
-
-    <p>📲 WhatsApp: +52 477 1429907</p>
-    <p>🚚 Entregas en tu ciudad</p>
-    <p>🌹 Flores eternas premium</p>
+  <h2>Contáctanos</h2>
+  <p>📲 WhatsApp: +52 477 342 9987</p>
+  <p>🚚 Entregas en tu ciudad</p>
+  <p>🌹 Flores eternas premium</p>
 </section>
-  <footer>
-    <p>Flores Eternas © 2026</p>
-  </footer>
 
-  <script src="app.js"></script>
+<a class="whatsapp" onclick="abrirWhatsApp()">💬</a>
+
+<footer>
+  <p>Flores Eternas © 2026</p>
+</footer>
+
+<script src="app.js"></script>
 </body>
 </html>
