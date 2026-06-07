@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Flores Eternas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <nav>
+      <h1>Flores Eternas</h1>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#pedido">Pedir</a>
+    </nav>
+
+    <div class="hero-content">
+      <h2>El regalo que nunca se marchita 🌹</h2>
+      <p>Flores eternas premium para aniversarios,cumpleaños y momentos inolvidables.</p>
+      <a class="btn" href="#catalogo">Ver catálogo</a>
+    </div>
+  </header>
+
+  <section id="catalogo" class="catalogo">
+    <h2>Catálogo</h2>
+
+    <div class="productos">
+
+      <div class="producto">
+        <img src="images/rosa1.jpeg" class="foto">
+        <h3>Rosa eterna individual</h3>
+        <p>Detalle elegante para cualquier ocasión.</p>
+        <strong>$399 MXN</strong>
+        <button onclick="pedirProducto('Rosa eterna individual')">
+          Pedir por WhatsApp
+        </button>
+      </div>
+
+      <div class="producto">
+        <img src="images/rosa2.jpeg" class="foto">
+        <h3>Caja de 3 rosas</h3>
+        <p>Ideal para aniversarios y cumpleaños.</p>
+        <strong>$799 MXN</strong>
+        <button onclick="pedirProducto('Caja de 3 rosas')">
+          Pedir por WhatsApp
+        </button>
+      </div>
+
+      <div class="producto">
+        <img src="images/rosa3.jpeg" class="foto">
+        <h3>Caja premium corazón</h3>
+        <p>Un regalo romántico y llamativo.</p>
+        <strong>$1,499 MXN</strong>
+        <button onclick="pedirProducto('Caja premium corazón')">
+          Pedir por WhatsApp
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="promo">
+    <h2>Promoción especial ✨</h2>
+    <p>Entrega el mismo día en pedidos confirmados antes de las 3:00 PM.</p>
+  </section>
+
+  <section id="pedido" class="pedido">
+    <h2>Haz tu pedido</h2>
+
+    <input type="text" id="nombre" placeholder="Tu nombre">
+    <input type="text" id="producto" placeholder="Producto que quieres">
+    <input type="text" id="mensaje" placeholder="Mensaje para la tarjeta">
+
+    <button onclick="enviarPedido()">Enviar pedido por WhatsApp</button>
+  </section>
+
+  <a class="whatsapp" onclick="abrirWhatsApp()">💬</a>
+<section class="testimonios">
+  <h2>Lo que dicen nuestros clientes</h2>
+
+  <div class="productos">
+
+    <div class="producto">
+      ⭐⭐⭐⭐⭐
+      <p>"Llegó el mismo día y quedó encantada."</p>
+      <strong>- Carlos</strong>
+    </div>
+
+    <div class="producto">
+      ⭐⭐⭐⭐⭐
+      <p>"La rosa sigue perfecta meses después."</p>
+      <strong>- Andrea</strong>
+    </div>
+
+    <div class="producto">
+      ⭐⭐⭐⭐⭐
+      <p>"La mejor opción para aniversarios."</p>
+      <strong>- Miguel</strong>
+    </div>
+
+  </div>
+</section>
+<section class="contacto">
+    <h2>Contáctanos</h2>
+
+    <p>📲 WhatsApp: +52 477 1429907</p>
+    <p>🚚 Entregas en tu ciudad</p>
+    <p>🌹 Flores eternas premium</p>
+</section>
+  <footer>
+    <p>Flores Eternas © 2026</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
