@@ -1,5 +1,5 @@
 function pedirProducto(producto) {
-    const telefono = "5214771422907";
+    const telefono = "524771429907";
 
     const mensaje = `Hola, me interesa el producto: ${producto}`;
 
