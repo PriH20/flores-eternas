@@ -277,3 +277,42 @@ button:hover{
     cursor:pointer;
     width:100%;
 }
+.ventajas{
+    padding:60px 20px;
+    text-align:center;
+    background:#fff0f6;
+}
+
+.ventajas h2{
+    margin-bottom:30px;
+    color:#b30059;
+}
+
+.contacto{
+    padding:60px 20px;
+    text-align:center;
+}
+
+footer{
+    background:#b30059;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.whatsapp-float{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    text-decoration:none;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
