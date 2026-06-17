@@ -6,8 +6,8 @@
 
 body{
     font-family:Arial, sans-serif;
-    background:#faf5f5;
-    color:#333;
+    background:#0f0f0f;
+    color:#f5f5f5;
 }
 
 .hero{
@@ -402,4 +402,255 @@ footer{
 }
 .oculto{
     display:none;
+}
+.catalogo,
+.galeria,
+.pedido,
+.testimonios,
+.ventajas{
+  background:#161616;
+  color:white;
+}
+
+.catalogo h2,
+.galeria h2,
+.pedido h2,
+.testimonios h2,
+.ventajas h2,
+.contacto h2{
+  color:#111;
+  font-size:36px;
+  letter-spacing:1px;
+}
+
+.producto,
+.item-galeria{
+  background:#ffffff;
+  border:1px solid #e5e5e5;
+  box-shadow:0 12px 30px rgba(0,0,0,0.10);
+}
+
+.producto:hover,
+.item-galeria:hover{
+  transform:translateY(-10px);
+  box-shadow:0 18px 40px rgba(0,0,0,0.18);
+}
+
+.producto strong,
+.item-galeria strong{
+  color:#b30000;
+  font-size:20px;
+}
+
+.producto button,
+.item-galeria button,
+.pedido button{
+  background:#111111;
+  color:white;
+  border:none;
+  border-radius:50px;
+  padding:14px 20px;
+  font-weight:bold;
+  letter-spacing:0.5px;
+}
+
+.producto button:hover,
+.item-galeria button:hover,
+.pedido button:hover{
+  background:#b30000;
+  box-shadow:0 10px 25px rgba(179,0,0,0.35);
+}
+
+.promo{
+  background:#111111;
+  color:white;
+}
+
+.beneficios{
+  background:white;
+  color:#111;
+  padding:60px 20px;
+  text-align:center;
+}
+
+.contacto{
+  background:#111111;
+  color:white;
+}
+
+.contacto h2{
+  color:white;
+}
+
+footer{
+  background:#000000;
+}
+/* ===== ESTILO PREMIUM ===== */
+
+body{
+    background:#0f0f0f;
+    color:white;
+}
+
+.catalogo,
+.galeria,
+.pedido,
+.testimonios,
+.ventajas{
+    background:#121212;
+    color:white;
+}
+
+.producto,
+.item-galeria{
+    background:#1c1c1c !important;
+    color:white;
+    border:1px solid #333;
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+
+.catalogo h2,
+.galeria h2,
+.pedido h2,
+.testimonios h2,
+.ventajas h2,
+.contacto h2{
+    color:white;
+}
+
+.producto strong,
+.item-galeria strong{
+    color:#d40000;
+    font-size:20px;
+}
+
+.contacto{
+    background:#000;
+    color:white;
+}
+
+footer{
+    background:#000;
+}
+/* ===== ACABADO PREMIUM FINAL ===== */
+
+.inicio-logo{
+  background: radial-gradient(circle at top, #2b0000 0%, #090909 45%, #000 100%);
+}
+
+.logo-principal{
+  filter: drop-shadow(0 18px 35px rgba(0,0,0,.7));
+}
+
+.catalogo,
+.galeria,
+.pedido,
+.testimonios,
+.ventajas{
+  background: linear-gradient(180deg, #0b0b0b, #151515);
+}
+
+.producto,
+.item-galeria{
+  background: rgba(255,255,255,.06) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 24px;
+}
+
+.producto img,
+.item-galeria img{
+  border-radius: 18px;
+}
+
+.producto button,
+.item-galeria button,
+.pedido button{
+  background: linear-gradient(135deg, #111, #3a0000);
+  border: 1px solid #8b0000;
+}
+
+.producto button:hover,
+.item-galeria button:hover,
+.pedido button:hover{
+  background: linear-gradient(135deg, #8b0000, #d40000);
+}
+
+.whatsapp-float{
+  background: #111;
+  border: 1px solid #d40000;
+}
+.topbar{
+  position:fixed;
+  top:20px;
+  right:20px;
+  display:flex;
+  gap:10px;
+  z-index:9999;
+}
+
+.menu-btn,
+.cart-btn{
+  background:rgba(0,0,0,.75);
+  color:white;
+  border:1px solid rgba(255,255,255,.2);
+  border-radius:12px;
+  padding:12px 16px;
+  font-size:22px;
+  cursor:pointer;
+}
+
+.cart-btn{
+  color:#d40000;
+}
+.topbar{
+  position:fixed;
+  top:20px;
+  right:20px;
+  display:flex;
+  gap:10px;
+  z-index:9999;
+}
+
+.menu-btn,
+.cart-btn{
+  background:rgba(0,0,0,.85);
+  color:white;
+  border:1px solid rgba(255,255,255,.15);
+  border-radius:14px;
+  padding:12px 16px;
+  font-size:22px;
+  cursor:pointer;
+}
+
+.cart-btn{
+  color:#d40000;
+}
+
+.menu{
+  position:fixed;
+  top:80px;
+  right:20px;
+  width:220px;
+  background:#111;
+  border-radius:18px;
+  padding:15px;
+  z-index:9998;
+  box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+.menu a{
+  display:block;
+  color:white;
+  text-decoration:none;
+  padding:12px;
+  border-radius:10px;
+}
+
+.menu a:hover{
+  background:#222;
+}
+
+.oculto{
+  display:none;
 }

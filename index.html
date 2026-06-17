@@ -29,7 +29,9 @@
       <h3>Rosa eterna individual</h3>
       <p>Detalle elegante para cualquier ocasión.</p>
       <strong>$399 MXN</strong>
-      <button onclick="pedirProducto('Rosa eterna individual - $399 MXN')">Pedir por WhatsApp</button>
+      <button onclick="agregarCarrito('Rosa eterna individual', 399)">
+  🛒 Agregar al carrito
+</button>
     </div>
 
     <div class="producto">
@@ -179,4 +181,22 @@
 </main>
 <script src="app.js"></script>
 </body>
+<div class="topbar">
+
+  <button class="menu-btn" onclick="toggleMenu()">
+    ☰
+  </button>
+
+  <button class="cart-btn">
+    🛒 <span id="cartCount">0</span>
+  </button>
+
+</div>
+
+<div id="menu" class="menu oculto"> 
+  <a href="#catalogo">🌹 Catálogo</a>
+  <a href="#galeria">📸 Galería</a>
+  <a href="#pedido">🛒 Pedido</a>
+  <a href="#contacto">📞 Contacto</a>
+</div>
 </html>
