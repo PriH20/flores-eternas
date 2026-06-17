@@ -316,3 +316,90 @@ footer{
     text-decoration:none;
     box-shadow:0 5px 15px rgba(0,0,0,.3);
 }
+.inicio-logo{
+  min-height:100vh;
+  background:linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f5f5f5 100%
+  );
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:30px;
+}
+
+
+.inicio-contenido .btn {
+  display: inline-block;
+  background: #111111;
+  color: white;
+  padding: 18px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+.inicio-contenido .btn:hover {
+  background: #b30000;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(179,0,0,0.35);
+}
+@media (max-width: 768px) {
+
+  .logo-principal{
+    width: 95%;
+    max-width: 420px;
+  }
+
+  .inicio-logo{
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  .btn{
+    width: 90%;
+    max-width: 320px;
+    padding: 18px;
+    font-size: 18px;
+  }
+
+  .catalogo h2,
+  .galeria h2,
+  .pedido h2{
+    font-size: 32px;
+  }
+
+  .productos{
+    grid-template-columns: 1fr;
+  }
+
+  .producto{
+    width: 100%;
+  }
+
+  .foto{
+    width: 100%;
+    height: auto;
+  }
+
+  input{
+    width: 95%;
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .pedido button{
+    width: 95%;
+    padding: 18px;
+    font-size: 18px;
+  }
+}
+.oculto{
+    display:none;
+}

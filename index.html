@@ -7,23 +7,19 @@
 </head>
 <body>
 
-<header class="hero">
-  <nav>
-    <h1>Flores Eternas</h1>
-    <a href="#catalogo">Catálogo</a>
-    <a href="#galeria">Galería</a>
-    <a href="#pedido">Pedir</a>
-  </nav>
+<header class="inicio-logo">
+  <div class="inicio-contenido">
+    <img src="logo.png" alt="Flores Eternas"
+    class="logo-principal">
 
-  <div class="hero-content">
-    <h2>El regalo que nunca se marchita 🌹</h2>
-    <p>Flores eternas premium para momentos inolvidables.</p>
-    <a class="btn" href="#catalogo">Ver catálogo</a>
-    <p style="margin-top:20px;font-weight:bold;">🎁 Envío gratis en pedidos seleccionados</p>
+<button class="btn" onclick="mostrarCatalogo()">Entrar al catalogo</button>
   </div>
 </header>
 
-<section id="catalogo" class="catalogo">
+<main id="contenido" class="oculto">
+
+  <section id="catalogo" class="catalogo">
+
   <h2>Catálogo</h2>
 
   <div class="productos">
@@ -180,7 +176,7 @@
 <footer>
   <p>Flores Eternas © 2026</p>
 </footer>
-
+</main>
 <script src="app.js"></script>
 </body>
 </html>
